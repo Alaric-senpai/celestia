@@ -15,7 +15,22 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Celestia",
   description: "Optimal weather app",
-}
+  keywords: ["weather", "forecast", "nextjs", "open-meteo"],
+  openGraph: {
+    title: "Celestia - Weather Forecast",
+    description: "Get real-time weather updates with Celestia.",
+    url: "https://celestia-ebon.vercel.app",
+    siteName: "Celestia",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Celestia - Weather Forecast",
+    description: "Get real-time weather updates with Celestia.",
+    images: ["/og-image.png"],
+  },
+};
 
 export default function RootLayout({
   children,
